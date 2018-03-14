@@ -6,12 +6,10 @@ import {
 	NavbarBrand,
 	Nav,
 	NavItem,
-	NavLink,
-	UncontrolledDropdown,
-	DropdownToggle,
-	DropdownMenu,
-	DropdownItem
+	NavLink
 } from 'reactstrap';
+
+import './Navbar.css';
 
 export default class Example extends React.Component {
 	constructor(props) {
@@ -35,14 +33,14 @@ export default class Example extends React.Component {
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
-							<NavItem>
-								<NavLink href="">Grant Perdue</NavLink>
+							<NavItem className='NavItem'>
+								<NavLink onClick={this.props.navAbout}>Grant Perdue</NavLink>
 							</NavItem>
-							<NavItem>
-								<NavLink href="">Portfolio</NavLink>
+							<NavItem className='NavItem'>
+								<NavLink onClick={this.props.navPortfolio}>Portfolio</NavLink>
 							</NavItem>
-							<NavItem>
-								<NavLink href="">Resume</NavLink>
+							<NavItem className='NavItem'>
+								<NavLink onClick={this.props.navResume}>Resume</NavLink>
 							</NavItem>
 						</Nav>
 					</Collapse>
