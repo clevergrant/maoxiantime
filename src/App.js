@@ -5,6 +5,12 @@ import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 import Resume from './components/resume/Resume';
 
+import Footer from './components/footer/Footer';
+
+import {
+	Jumbotron
+} from 'reactstrap';
+
 import './App.css';
 
 class App extends Component {
@@ -47,27 +53,33 @@ class App extends Component {
 					navResume={this.navResume}
 				/>
 
-				{
-					this.state.page === "About"
-					&& (
-						<About />
-					)
-				}
+				<div className='hero-pic' />
+				<div className='profile-pic' />
 
-				{
-					this.state.page === "Portfolio"
-					&& (
-						<Portfolio />
-					)
-				}
+				<div className="body">
+					{
+						this.state.page === "About"
+						&& (
+							<About />
+						)
+					}
 
-				{
-					this.state.page === "Resume"
-					&& (
-						<Resume />
-					)
-				}
+					{
+						this.state.page === "Portfolio"
+						&& (
+							<Portfolio />
+						)
+					}
 
+					{
+						this.state.page === "Resume"
+						&& (
+							<Resume />
+						)
+					}
+				</div>
+
+				<Footer />
 
 			</div>
 		)

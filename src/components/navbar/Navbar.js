@@ -29,12 +29,12 @@ export default class Example extends React.Component {
 		return (
 			<div>
 				<Navbar color="dark" dark expand="md" fixed="sticky">
-					<NavbarBrand href="/">MaoXianTime</NavbarBrand>
+					<NavbarBrand href="/">Grant Perdue</NavbarBrand>
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem className='NavItem'>
-								<NavLink onClick={this.props.navAbout}>Grant Perdue</NavLink>
+								<NavLink onClick={this.props.navAbout}>About Me</NavLink>
 							</NavItem>
 							<NavItem className='NavItem'>
 								<NavLink onClick={this.props.navPortfolio}>Portfolio</NavLink>
