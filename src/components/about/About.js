@@ -16,31 +16,31 @@ import {
 class About extends Component {
 	constructor(props) {
 		super(props);
-		this.handleSubmit = this.handleSubmit.bind(this);
-		this.state = {
-			name: '',
-			email: '',
-			message: ''
-		};
+		// this.handleSubmit = this.handleSubmit.bind(this);
+		// this.state = {
+		// 	name: '',
+		// 	email: '',
+		// 	message: ''
+		// };
 	}
 
-	handleSubmit = e => {
-		fetch("/", {
-			method: "POST",
-			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: encode({ "form-name": "contact", ...this.state })
-		})
-			.then(() => { this.props.history.push('/Thanks') })
-			.catch(error => alert(error));
+	// handleSubmit = e => {
+	// 	fetch("/", {
+	// 		method: "POST",
+	// 		headers: { "Content-Type": "application/x-www-form-urlencoded" },
+	// 		body: encode({ "form-name": "contact", ...this.state })
+	// 	})
+	// 		.then(() => { this.props.history.push('/Thanks') })
+	// 		.catch(error => alert(error));
 
-		e.preventDefault();
-	}
+	// 	e.preventDefault();
+	// }
 
 	handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 	render() {
 
-		const { name, email, message } = this.state;
+		// const { name, email, message } = this.state;
 
 		return (
 			<Container>
@@ -59,21 +59,25 @@ class About extends Component {
 							<h2>Request a free consultation, or just say hi!</h2>
 						</center>
 
-						<Form handleSubmit={this.handleSubmit}>
+						{/* <Form handleSubmit={this.handleSubmit}> */}
+						<Form name='contact' method='POST' netlify>
 							<FormGroup>
 								<Label for='name'>Name</Label>
-								<Input type='text' id='name' name='name' value={name} placeholder='Your Name' onChange={this.handleChange} />
+								{/* <Input type='text' id='name' name='name' value={name} placeholder='Your Name' onChange={this.handleChange} /> */}
+								<Input type='text' id='name' name='name' placeholder='Your Name' />
 							</FormGroup>
 							<FormGroup>
 								<Label for='email'>Email</Label>
-								<Input type='email' id='email' name='email' value={email} placeholder='your@email.here' onChange={this.handleChange} />
+								{/* <Input type='email' id='email' name='email' value={email} placeholder='your@email.here' onChange={this.handleChange} /> */}
+								<Input type='email' id='email' name='email' placeholder='your@email.here' />
 							</FormGroup>
 							<FormGroup>
 								<Label for='message'>Message</Label>
-								<Input type='textarea' id='message' name='message' value={message} onChange={this.handleChange} />
+								{/* <Input type='textarea' id='message' name='message' value={message} onChange={this.handleChange} /> */}
+								<Input type='textarea' id='message' name='message' />
 							</FormGroup>
 							<FormGroup>
-								<Button color='info'>Send</Button>
+								<Button type='submit' color='info'>Send</Button>
 							</FormGroup>
 						</Form>
 					</Col>
