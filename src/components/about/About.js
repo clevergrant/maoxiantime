@@ -59,7 +59,7 @@ class About extends Component {
 							<h2>Request a free consultation, or just say hi!</h2>
 						</center>
 
-						<Form name='contact' method='POST' netlify handleSubmit={this.handleSubmit}>
+						<Form handleSubmit={this.handleSubmit}>
 							<FormGroup>
 								<Label for='name'>Name</Label>
 								<Input type='text' id='name' name='name' value={name} placeholder='Your Name' onChange={this.handleChange} />
