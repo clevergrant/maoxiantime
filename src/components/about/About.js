@@ -30,7 +30,7 @@ class About extends Component {
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
 			body: encode({ "form-name": "contact", ...this.state })
 		})
-			.then(() => this.props.history.push('/thanks'))
+			.then(() => { this.props.history.push('/Thanks') })
 			.catch(error => alert(error));
 
 		e.preventDefault();
