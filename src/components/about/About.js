@@ -17,9 +17,10 @@ class About extends Component {
 						<center>
 							<h1 className='display-4'>About Me</h1>
 						</center>
-						<p>Lorem ipsum dolor amet subway tile umami poke art party, wolf retro whatever activated charcoal gochujang. Selfies tilde gastropub flexitarian ennui church-key artisan. Locavore butcher kale chips chicharrones fanny pack. Bitters helvetica celiac, biodiesel wayfarers deep v kogi.</p>
-						<p>Photo booth yuccie lomo, meggings art party jean shorts put a bird on it four dollar toast cornhole. Seitan austin keffiyeh synth, trust fund banh mi plaid chillwave tousled art party franzen. Swag squid art party hell of fam. Stumptown kitsch 90's, beard master cleanse ramps thundercats wayfarers green juice.</p>
-						<p>Selfies fam thundercats yr selvage retro. Franzen enamel pin ramps literally quinoa slow-carb. Copper mug subway tile 8-bit, meditation umami next level tacos. Hexagon lumbersexual kitsch semiotics, whatever sustainable selvage. Tote bag try-hard edison bulb normcore schlitz.</p>
+						<p>I grew up in sunny Southern California, and I love the ocean. Sailing is one of my favorite things to do, besides building websites. I've been developing since 2014, JavaScript being my first language. I've done tons of school projects using C++, including creating my own binary search trees, and all sorts of other types of data storage.</p>
+						<p>My first job developing was at Brigham Young University, where we had been using Microsoft SharePoint to develop our outward-facing sites. After updating the servers and moving them off-site, we realized that we could no longer rely on SharePoint, having lost control of the backend. So, we made a list of all of the best features that we and our clients liked, and we set off creating our own CMS, which we called SCE (Simple Content Editor).</p>
+						<p>On my own time, I also enjoy playing video games. I love some classics like Fire Emblem on the GameBoy Advance. When I'm bored of the normal gameplay, I like hacking into the game to upgrade my characters to rediculous levels. One day, I was hacking the game and decided that I'd like a tool to make the hacking that much easier for me. Little did I know, I'd be scrolling through the emulators' codebase learning how they wrote the cheat system, attempting to re-create it in JavaScript. After a couple days of intense research and coding, I completed my website, <a href="http://fireemblem.maoxiantime.com">FireEmblem Cheats</a>.</p>
+						<p>I'm LDS, so I love Jesus, and I love dogs.</p>
 					</Col>
 				</Row>
 			</Container>

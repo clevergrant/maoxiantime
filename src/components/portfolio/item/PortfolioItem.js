@@ -12,7 +12,7 @@ class PortfolioItem extends Component {
 		return (
 			<Row className="PortfolioItem">
 				<Col sm="4">
-					<img className="img-thumbnail" src={this.props.file} />
+					<img className="img-thumbnail" src={this.props.file} alt='Grant Perdue' />
 				</Col>
 				<Col sm="8">
 					<h2>{this.props.name}</h2>

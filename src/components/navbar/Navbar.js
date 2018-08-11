@@ -9,6 +9,8 @@ import {
 	NavLink
 } from 'reactstrap';
 
+import { Link } from 'react-router-dom';
+
 import './Navbar.css';
 
 export default class Example extends React.Component {
@@ -27,20 +29,26 @@ export default class Example extends React.Component {
 	}
 	render() {
 		return (
-			<div>
+			<div className='Navbar-custom'>
 				<Navbar color="dark" dark expand="md" fixed="sticky">
 					<NavbarBrand href="/">Grant Perdue</NavbarBrand>
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem className='NavItem'>
-								<NavLink onClick={this.props.navAbout}>About Me</NavLink>
+								<Link to={'/'}>
+									<NavLink>About Me</NavLink>
+								</Link>
 							</NavItem>
 							<NavItem className='NavItem'>
-								<NavLink onClick={this.props.navPortfolio}>Portfolio</NavLink>
+								<Link to={'/Portfolio'}>
+									<NavLink>Portfolio</NavLink>
+								</Link>
 							</NavItem>
 							<NavItem className='NavItem'>
-								<NavLink onClick={this.props.navResume}>Resume</NavLink>
+								<Link to={'/Resume'}>
+									<NavLink>Resume</NavLink>
+								</Link>
 							</NavItem>
 						</Nav>
 					</Collapse>
