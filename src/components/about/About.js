@@ -42,7 +42,7 @@ class About extends Component {
 
 	render() {
 
-		const { name, email, message } = this.state;
+		// const { name, email, message } = this.state;
 
 		return (
 			<Container>
